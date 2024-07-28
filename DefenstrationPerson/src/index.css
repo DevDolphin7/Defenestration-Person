@@ -1,0 +1,101 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', "sans-serif";
+    font-size: 16px;
+}
+
+#root {
+    background-color: #C7FFB4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0 0 15px 0;
+    font-size: 300%;
+    color: #8800FF
+}
+
+h2 {
+    font-size: 200%;
+    color:  #A000A0;
+}
+
+img {
+    display:block;
+    margin: 30px auto 30px auto;
+}
+
+.displayLetters {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.displayLetters li {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 7px 50px 7px;
+
+    border: 5px solid #A000A0;
+    border-radius: 20px;
+    font-size: 2rem;
+}
+
+.hiddenLetter {
+    color: #C7FFB4;
+}
+
+.showLetter {
+    color: #8800FF;
+}
+
+.userButtons {
+    width: 644px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto 50px auto;
+}
+
+.userButtons button {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+
+    border: 0px;
+    border-radius: 20px;
+    color: #8800FF;
+    font-size: 2rem;
+}
+
+.userButtons button[id="26"] {
+    margin: 30px 100% 0 100%;
+    width: 120px;
+}
+
+.activeButton {
+    background-color: transparent;
+}
+
+.inactiveButton {
+    background-color: #89b47c;
+}
+
+footer {
+    margin: auto 0 15px 15px;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
