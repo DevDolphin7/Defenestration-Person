@@ -5,7 +5,7 @@ import UserInput from "./UserInput";
 import { getRandomWordLetters } from "../utils/utils.js";
 
 const MainGame = () => {
-  const [image, setImage] = useState("./src/assets/Start.png");
+  const [image, setImage] = useState("../assets/Start.png");
   const [correctLetters, setCorrectLetters] = useState([]);
   const [correctWordLetters, setCorrectWordLetters] = useState(
     getRandomWordLetters()
