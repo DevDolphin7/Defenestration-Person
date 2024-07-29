@@ -28,7 +28,7 @@ const UserInput = (props) => {
       gameWon = false;
       buttonClasses = Array(27).fill("activeButton");
       setCorrectLetters([]);
-      setImage("./src/assets/Start.png");
+      setImage("startImage");
       setDisabledButtons(Array(27).fill(false));
       setCorrectWordLetters(getRandomWordLetters())
     };
@@ -49,7 +49,7 @@ const UserInput = (props) => {
         const noRepeatsCorrectLetters = [...new Set(correctWordLetters)]
         if (correctLetters.length === noRepeatsCorrectLetters.length) {
           gameWon = true;
-          setImage("./src/assets/Win.png");
+          setImage("winImage");
         }
         return correctLetters;
       });
@@ -65,9 +65,9 @@ const UserInput = (props) => {
 
     // Check if image needs updating
     if (incorrectGuessCount === 4) {
-      setImage("./src/assets/Worried.png");
+      setImage("worriedImage");
     } else if (incorrectGuessCount === 6) {
-      setImage("./src/assets/Lose.png");
+      setImage("loseImage");
       setCorrectLetters(correctWordLetters.join(""));
       return;
     }
