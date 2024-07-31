@@ -1,7 +1,7 @@
 import startImage from "../assets/Start.png";
 import winImage from "../assets/Win.png";
 import worriedImage from "../assets/Worried.png";
-import loseImage from "../assets/Start.png";
+import loseImage from "../assets/Lose.png";
 
 const imageLookup = {
   startImage,
